@@ -23,6 +23,13 @@ body {
     overflow: hidden;
 }
 
+.cod-container-cont {
+    background: #fff;
+    width: 700px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
 .form-header {
     background: rgba(33, 44, 109, 0.938);
     text-align: center;
@@ -46,6 +53,10 @@ body {
 }
 
 .cod-form {
+    padding: 10px 40px 40px;
+}
+
+.cod-form-cont {
     padding: 10px 40px 40px;
 }
 
@@ -96,7 +107,9 @@ h3::before {
 
 input[type="email"],
 input[type="password"],
-input[type="name"] {
+input[type="name"],
+input[type="text"],
+input[type="tel"] {
     border: none;
     border-bottom: 2px solid #021e26;
     width: 100%;
