@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--estilos-->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!--ewe-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caos News</title>
+</head>
+
+<body>
+
+    <!--NAVBAR-->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"> <img src="img/caos news.png" alt="" width="100px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscador" aria-label="Search">
+                        <button class="btn btn-light" type="submit">Buscar</button>
+                    </form>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">GALERIA</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                NOTICIAS
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="periodistas.html">PERIODISTAS</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="categorias.html">CATEGORIAS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="formulario.html">FORMULARIO</a>
+                        </li>
+                    </ul>
+                    <a href="login.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45px" height="45px" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--contenido-->
+    <main>
+        <!--carousel-->
+        <div id="myCarousel" class="carousel slide galerycarousel" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Noticias/videojuegos/noticia10/noticia10banner.jpg" alt="" width="100%" height="800px">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>The Legend of Zelda: Majora’s Mask cumple 21 años desde su lanzamiento en Japón</h1>
+                            <p>Desde entonces, se pide un juego igual de oscuro en la franquicia</p>
+                            <p><a class="btn btn-lg btn-primary" href="cat4.html">Ver mas de esta categoria</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Noticias/economia/noticia5/noticia5.jpg" alt="" width="100%" height="800px">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>Precio del cobre alcanzó su mejor nivel en casi una década</h1>
+                            <p>La Comisión Chilena del Cobre informó este lunes que la principal exportación chilena tuvo un incremento de 2,23%, cotizándose en US$ 4,42 la libra grado A.</p>
+                            <p><a class="btn btn-lg btn-primary" href="cat2.html">Ver mas de esta categoria</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Noticias/deportes/noticia8/noticia8.jpg" alt="" width="100%" height="800px">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>Con un Alexis estelar: Inter derrotó a Hellas Verona y se acercó al título en Italia</h1>
+                            <p>A falta de cinco fechas para que termine la Serie A, el "niño maravilla" estiró aún más su ventaja en el liderato. Por ahora, el elenco que dirige Antonio Conte sigue al frente de la tabla con 79 puntos, sacándole 13 al Milán,
+                                que el lunes 26 visitará a la Lazio.</p>
+                            <p><a class="btn btn-lg btn-primary" href="cat3.html">Ver mas de esta categoria</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Periodistas -->
+        <section class="container galeryperiodista" data-aos="fade">
+            <h1>PERIODISTAS</h1>
+            <div class="row rowcustom">
+                <div class="col colcustom">
+                    <a href="periodista1.html"><img src="img/periodistas/periodista1.jpg" alt=""></a>
+                    <a href="periodista1.html">
+                        <h1>Misael Ocas</h1>
+                    </a>
+                </div>
+                <div class="col colcustom">
+                    <a href="periodista2.html"><img src="img/periodistas/periodista2.jpg" alt=""></a>
+                    <a href="periodista2.html">
+                        <h1>Amaro Rodriguez</h1>
+                    </a>
+                </div>
+                <div class="col colcustom">
+                    <a href="periodista3.html"><img src="img/periodistas/periodista3.jpg" alt=""></a>
+                    <a href="periodista3.html">
+                        <h1>Diego Altamirano</h1>
+                    </a>
+                </div>
+                <div class="col colcustom">
+                    <a href="periodista4.html"><img src="img/periodistas/periodista4.png" alt=""></a>
+                    <a href="periodista4.html">
+                        <h1>Nicolas Carrasco</h1>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Noticias-->
+
+        <section class="container noticegalery" data-aos="fade-left">
+            <h1>GALERIA DE NOTICIAS</h1>
+            <div class="row rownotice">
+                <div class="col"><img src="img/Noticias/coronavirus/noticia1/noticia1.jpg" alt=""></div>
+                <div class="col">
+                    <a href="noticia1.html">
+                        <h1>Minsal reportó 6.638 nuevos contagios y 114 fallecidos durante las últimas 24 horas</h1>
+                    </a>
+                    <p>A la fecha, 3.353 personas se encuentran hospitalizadas en Unidades de Cuidados Intensivos. Mientras que la positividad a nivel país es de 9,18% y en la Región Metropolitana es de 10%.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row rownotice" data-aos="fade-right">
+                <div class="col">
+                    <a href="noticia2.html">
+                        <h1>Minsal reportó 4.141 nuevos casos de COVID-19 y 3.406 personas en camas UCI</h1>
+                    </a>
+                    <p>La cartera detalló que hasta la fecha 39.171 pacientes se encuentran en etapa activa. En tanto, en las últimas 24 horas se registraron 45 fallecidos por causas asociadas al COVID-19.
+                    </p>
+                </div>
+                <div class="col"><img src="img/Noticias/coronavirus/noticia2/noticia2.jpg" alt=""></div>
+
+            </div>
+            <div class="row rownotice" data-aos="fade-left">
+                <div class="col"><img src="img/Noticias/coronavirus/noticia3/noticia3.jpg" alt=""></div>
+                <div class="col">
+                    <a href="noticia3.html">
+                        <h1>UE inicia acciones legales contra AstraZeneca por retraso en entrega de vacunas</h1>
+                    </a>
+                    <p>La demanda, que fue apoyada por los 27 países miembros, indica que el laboratorio violó algunos términos del contrato. "Nuestra prioridad es garantizar que se lleven a cabo las entregas", destacó la comisaria europea de Salud.
+                    </p>
+                </div>
+            </div>
+            <div class="row rownotice" data-aos="fade-right">
+                <div class="col">
+                    <a href="noticia4.html">
+                        <h1>Presidente de Falabella: “Las personas que más tenemos debiéramos pagar más impuestos”</h1>
+                    </a>
+                    <p>El empresario del retail aseguró que "ha llegado el momento de sentarnos todos a la mesa y buscar cuál es la manera de financiar gastos de largo plazo". Sin embargo, se mostró en contra de un impuesto permanente a los "súper ricos".
+                    </p>
+                </div>
+                <div class="col"><img src="img/Noticias/economia/noticia4/noticia4.jpg" alt=""></div>
+
+            </div>
+            <div class="row rownotice" data-aos="fade-left">
+                <div class="col"><img src="img/Noticias/economia/noticia5/noticia5.jpg" alt=""></div>
+                <div class="col">
+                    <a href="noticia5.html">
+                        <h1>Precio del cobre alcanzó su mejor nivel en casi una década </h1>
+                    </a>
+                    <p>La Comisión Chilena del Cobre informó este lunes que la principal exportación chilena tuvo un incremento de 2,23%, cotizándose en US$ 4,42 la libra grado A.
+                    </p>
+                </div>
+            </div>
+            <div class="row rownotice" data-aos="fade-right">
+                <div class="col">
+                    <a href="noticia6.html">
+                        <h1>SII postergará pago de contribuciones a afectados por crisis sanitaria: Así aplicará</h1>
+                    </a>
+                    <p>El beneficio permite aplazar contribuciones de todo el año, en el caso de las personas, y del primer semestre, en el caso de las empresas, las que podrán pagarse en cuatro cuotas de igual valor durante 2022. Acá lo que tienes que saber
+                        del proceso.
+                    </p>
+                </div>
+                <div class="col"><img src="img/Noticias/economia/noticia6/noticia6.jpg" alt=""></div>
+
+            </div>
+            <div class="row rownotice" data-aos="fade-left">
+                <div class="col"><img src="img/Noticias/deportes/noticia7/noticia7.jpg" alt=""></div>
+                <div class="col">
+                    <a href="noticia7.html">
+                        <h1>Superclásico: Colo Colo venció a la U y estiró su invicto en el Monumental</h1>
+                    </a>
+                    <p>El cuadro laico no supera a los albos en Macul desde el 9 de septiembre del 2001. Con este resultado, el Cacique se ubica por ahora como líder exclusivo del Campeonato Nacional 2021.
+                    </p>
+                </div>
+            </div>
+            <div class="row rownotice" data-aos="fade-right">
+                <div class="col">
+                    <a href="noticia8.html">
+                        <h1>Con un Alexis estelar: Inter derrotó a Hellas Verona y se acercó al título en Italia</h1>
+                    </a>
+                    <p>A falta de cinco fechas para que termine la Serie A, el "niño maravilla" estiró aún más su ventaja en el liderato. Por ahora, el elenco que dirige Antonio Conte sigue al frente de la tabla con 79 puntos, sacándole 13 al Milán, que
+                        el lunes 26 visitará a la Lazio.
+                    </p>
+                </div>
+                <div class="col"><img src="img/Noticias/deportes/noticia8/noticia8.jpg" alt=""></div>
+
+            </div>
+            <div class="row rownotice" data-aos="fade-left">
+                <div class="col"><img src="img/Noticias/deportes/noticia9/noticia9.jpg" alt=""></div>
+                <div class="col">
+                    <a href="noticia9.html">
+                        <h1>Colo Colo superó a Everton en Viña gracias a una mano en el área de Julio Barroso</h1>
+                    </a>
+                    <p>Uno de los tantos en el triunfo de los albos sobre los ruleteros lo hizo Iván Morales desde los doce pasos y lo celebró de manera emotiva con los brazos al cielo, tras el fallecimiento de su madre esta semana.
+                    </p>
+                </div>
+            </div>
+            <div class="row rownotice" data-aos="fade-right">
+                <div class="col">
+                    <a href="noticia10.html">
+                        <h1>Minsal reportó 6.638 nuevos contagios y 114 fallecidos durante las últimas 24 horas</h1>
+                    </a>
+                    <p>A la fecha, 3.353 personas se encuentran hospitalizadas en Unidades de Cuidados Intensivos. Mientras que la positividad a nivel país es de 9,18% y en la Región Metropolitana es de 10%.
+                    </p>
+                </div>
+                <div class="col"><img src="img/Noticias/videojuegos/noticia10/noticia10img.jpg" alt=""></div>
+
+            </div>
+            <div class="row rownotice" data-aos="fade-left">
+                <div class="col"><img src="img/Noticias/videojuegos/noticia11/noticia11banner.jpg" alt=""></div>
+                <div class="col">
+                    <a href="noticia11.html">
+                        <h1>Minsal reportó 6.638 nuevos contagios y 114 fallecidos durante las últimas 24 horas</h1>
+                    </a>
+                    <p>A la fecha, 3.353 personas se encuentran hospitalizadas en Unidades de Cuidados Intensivos. Mientras que la positividad a nivel país es de 9,18% y en la Región Metropolitana es de 10%.
+                    </p>
+                </div>
+            </div>
+            <div class="row rownotice" data-aos="fade-right">
+                <div class="col">
+                    <a href="noticia12.html">
+                        <h1>Minsal reportó 6.638 nuevos contagios y 114 fallecidos durante las últimas 24 horas</h1>
+                    </a>
+                    <p>A la fecha, 3.353 personas se encuentran hospitalizadas en Unidades de Cuidados Intensivos. Mientras que la positividad a nivel país es de 9,18% y en la Región Metropolitana es de 10%.
+                    </p>
+                </div>
+                <div class="col"><img src="img/Noticias/videojuegos/noticia12/noticia12img.jpg" alt=""></div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+        <!--FOOTER-->
+        <footer>
+            <div class=" contenedor ">
+                <p class="foottext ">CAOS NEWS &copy; 2021</p>
+            </div>
+            <div class="container ">
+                <div class="row ">
+                    <div class="col aling-self-start ">
+                        <p class="foottext ">Contacto</p>
+                        <a href="mailto:ja.quinterosg@alumnos.duoc.cl "> Javier Quinteros</a> <br>
+                        <a href="mailto:alo.arteaga@duocuc.cl "> Alonso Arteaga</a><br>
+                        <a href=" "> Benjamin Gaete</a>
+                    </div>
+                    <div class="col aling-self-center ">
+                    </div>
+                    <div class="col aling-self-end ">
+
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor1 ">
+                <p class="foottext ">Avenida Concha Y Toro, Av. San Carlos 1340, Puente Alto, Santiago Chile- Teléfono : +56 9 XXXX XXXX</p>
+            </div>
+        </footer>
+
+    </main>
+
+
+
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js " integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js " integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc " crossorigin="anonymous "></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
