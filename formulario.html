@@ -8,14 +8,13 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/registro.css'>
     <link rel='stylesheet' href="css/estilos.css">
-    <script src="js/sweetalert2.all.min.js"></script>
     <script src='lib/jquery-3.1.1.js'></script>
     <script src="dist/jquery.validate.min.js"></script>
     <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 </head>
-
 <header>
+
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html"> <img src="img/caos news.png" alt="" width="100px"></a>
@@ -62,72 +61,62 @@
 </header>
 
 <body>
-    <div class="cod-container">
+    <div class="cod-container-cont">
         <div class="form-header">
             <img src="img/caos news.png" alt="Logo">
         </div>
 
 
-        <div class="form-content" id="formulario">
+        <div class="form-content" id="formulario-contacto">
 
 
-            <form action="#" class="cod-form">
+            <form class="cod-form-cont">
                 <div class="form-title">
-                    <h3>Iniciar Sesión</h3>
+                    <h3>Contacto</h3>
                 </div>
 
                 <div class="input-group">
-                    <input type="email" class="form-input" name="form-input" id="correo" required minlength="10">
-                    <label class="label" for="correo">Correo Electrónico</label>
+                    <input type="name" class="form-input" name="form-input" id="cont-nombre" required minlength="5" maxlength="20" pattern="[A-Za-z ]{5,20}" title="Ingrese un nombre valido">
+                    <label class="label" for="cont-nombre">Ingrese su nombre y apellido</label>
                 </div>
 
                 <div class="input-group">
-                    <input type="password" class="form-input" name="form-input" id="pass" required minlength="7" maxlength="15" pattern="2,15}">
-                    <label class="label" for="pass">Contraseña</label>
+                    <input type="email" class="form-input" name="form-input" id="cont-correo" required minlength="10">
+                    <label class="label" for="cont-correo">Correo Electrónico</label>
                 </div>
 
                 <div class="input-group">
-                    <input type="submit" class="form-input" value="Iniciar Sesión">
-                    <p>¿No tienes cuenta? <a href="#" class="alt-form">Regístrate</a></p>
+                    <input type="tel" class="form-input" name="form-input" id="cont-telefono" required minlength="9">
+                    <label class="label" for="cont-telefono">Teléfono  <small>(Ej: 9 xxxx xxxx)</small></label>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" class="form-input" name="form-input" id="cont-asunto" required minlength="3" maxlength="25">
+                    <label class="label" for="cont-asunto">Asunto</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" class="form-input" name="form-input" id="cont-mensaje" required minlength="5" maxlength="300">
+                    <label class="label" for="cont-mensaje">Mensaje</label>
+                </div>
+
+
+
+
+
+                <div class="input-group">
+                    <input type="submit" class="form-input" value="Envíar">
                 </div>
 
             </form>
 
         </div>
 
+        </form>
 
-
-        <div class="form-content">
-            <form action="#" class="cod-form">
-                <div class="form-title">
-                    <h3>Regístrate</h3>
-                </div>
-
-                <div class="input-group">
-                    <input type="name" class="form-input" name="form-input" id="reg-nombre" required minlength="5" maxlength="20" pattern="[A-Za-z ]{5,20}" title="Ingrese un nombre valido">
-                    <label class="label" for="reg-nombre">Ingrese su nombre y apellido</label>
-                </div>
-
-                <div class="input-group">
-                    <input type="email" class="form-input" name="form-input" id="reg-correo" required minlength="10">
-                    <label class="label" for="reg-correo">Correo Electrónico</label>
-                </div>
-
-
-                <div class="input-group">
-                    <input type="password" class="form-input" name="form-input" id="reg-pass" required minlength="7" maxlength="15" pattern="{2,15}">
-                    <label class="label" for="reg-pass">Ingrese su Contraseña</label>
-                </div>
-
-                <div class="input-group">
-                    <input type="submit" class="form-input" value="Registrate">
-                    <p>¿Ya tienes una cuenta? <a href="#" class="alt-form">Ingrese Aquí</a></p>
-                </div>
-
-            </form>
-
-        </div>
     </div>
+    </div>
+
 
     <!--JS-->
     <script src="js/jquery-3.3.1.min.js"></script>
@@ -136,6 +125,8 @@
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js " integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG " crossorigin="anonymous "></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js " integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc " crossorigin="anonymous "></script>
+
 </body>
+
 
 </html>
