@@ -33,7 +33,7 @@
         
         .noticegalery img {
             height: 400px;
-            width: 600px;
+            width: 100%;
         }
         
         .noticegalery p {

@@ -3,6 +3,7 @@
 @import url(noticias.css);
 @import url(galeria.css);
 @import url(periodistas.css);
+@import url(user.css);
 * {
     margin: 0;
     padding: 0;
