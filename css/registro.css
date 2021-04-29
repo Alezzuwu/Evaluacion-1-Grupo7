@@ -9,7 +9,7 @@ body {
     background-image: linear-gradient(to right, #33313383, rgba(33, 44, 109, 0.938));
     /*color: #fff;*/
     width: 100%;
-    height: 100vh;
+    height: 115vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,7 +109,9 @@ input[type="email"],
 input[type="password"],
 input[type="name"],
 input[type="text"],
-input[type="tel"] {
+input[type="tel"],
+input[type="text"],
+input[type="date"] {
     border: none;
     border-bottom: 2px solid #021e26;
     width: 100%;
